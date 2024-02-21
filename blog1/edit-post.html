@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogStein</title>
+    <!--CUSTOM STYLESHEET-->
+    <link rel="stylesheet" href="./style.css">
+    <!--Icon scout CDN-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!--Google fonts montserrat-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* Add spacing after header */
+        header {
+            margin-bottom: 20px;
+        }
+        
+        /* Add spacing before footer */
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo">BlogStein</a>
+            <ul class="nav__items">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="nav__profile">
+                    <div class="avatar">
+                        <img src="./images/avatar12.jpg" alt="Avatar">
+                    </div>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="logout.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button id="open__nav-btn"><i class="uil uil-bars"></i></button>
+            <button id="close__nav-btn"><i class="uil uil-multiply"></i></button>
+        </div>        
+    </nav>
+
+    <section class="form_section">
+        <div class="container form section-container">
+            <h2>Edit Post</h2>
+            <div class="alert_message error">
+                <p>This is an error message</p>
+            </div>
+            <form action="" enctype="multipart/form-data">
+                <input type="text" placeholder="Title">
+                <select>
+                    <option value="1">Travel</option>
+                    <option value="1">Art</option>
+                    <option value="1">Science and Technology</option>
+                    <option value="1">Sci-Fi</option>
+                    <option value="1">Computer Science</option>
+                    <option value="1">Programming and coding</option>
+                    <option value="1">Photoshop</option>
+                    <option value="1">WWE</option>
+                    <option value="1">Cricket</option>
+                    <option value="1">Celebrity gossips</option>
+                    <option value="1">others</option>
+                </select>
+                <textarea rows="10" placeholder="Body "></textarea>
+                <div class="form__control inline">
+                    <input type="checkbox" id="is_featured"checked >
+                    <label for="is_featured" >Featured</label>
+                </div>
+                
+                
+                <div class="form__control">
+                    <label for="thumbnail">Change Thumbnail</label>
+                    <input type="file" id="thumbnail">
+                </div>
+                <button type="submit" class="btn">Update POST</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__socials">
+            <a href="https://youtu.be/iw825ksP8eU?si=oqE7LvswXgCXFl39"><i class="uil uil-youtube"></i></a>
+            <a href="https://youtu.be/iw825ksP8eU?si=oqE7LvswXgCXFl39"><i class="uil uil-linkedin"></i></a>
+            <a href="https://youtu.be/iw825ksP8eU?si=oqE7LvswXgCXFl39"><i class="uil uil-instagram"></i></a>
+            <a href="https://youtu.be/iw825ksP8eU?si=oqE7LvswXgCXFl39"><i class="uil uil-twitter"></i></a>
+            <a href="https://youtu.be/iw825ksP8eU?si=oqE7LvswXgCXFl39"><i class="uil uil-whatsapp"></i></a>
+        </div>
+        <div class="container footer__container">
+            <article>
+                <h4>CATEGORIES</h4>
+                <ul>
+                    <li><a href="">WILD LIFE</a></li>
+                    <li><a href="">TECHNOLOGY</a></li>
+                    <li><a href="">PEOPLE</a></li>
+                    <li><a href="">FRUITS</a></li>
+                    <li><a href="">MUSIC</a></li>
+                    <li><a href="">ART</a></li>
+                    <li><a href="">ADVENTURE</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>SUPPORT</h4>
+                <ul>
+                    <li><a href="">Online Support</a></li>
+                    <li><a href="">Call Number</a></li>
+                    <li><a href="">Emails</a></li>
+                    <li><a href="">Social Support</a></li>
+                    <li><a href="">Location</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>BLOG</h4>
+                <ul>
+                    <li><a href="">Safety</a></li>
+                    <li><a href="">Repair</a></li>
+                    <li><a href="">Recent</a></li>
+                    <li><a href="">Popular</a></li>
+                    <li><a href="">Categories</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>PermaLinks</h4>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </article>
+        </div>
+        <div class="footer__copyrights">
+            <div class="copyright-text">  
+                <small>Copyright &copy; 2024 Prajwal. All rights reserved. </small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
